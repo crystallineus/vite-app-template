@@ -19,7 +19,6 @@ const ProductModal: React.FC<ProductModalProps> = ({
       <ProductCardModal
         product={product}
         onClose={onClose}
-        addReferences={() => {}}
         setDisplayedProducts={() => {}}
         productCards={[]}
       />

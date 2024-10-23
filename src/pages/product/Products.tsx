@@ -13,7 +13,7 @@ import { products } from "../../fixtures/productList";
 import { ProductCard, ProductProps } from "./ProductCard";
 import { CONFIG } from "../../config-global";
 import ProductModal from "./ProductModal";
-import { ProductType } from "../../models/Product";
+import { ProductType } from "../../models/ProductType";
 export const Products: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [filter, setFilter] = useState<string>("ALL");

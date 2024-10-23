@@ -1,4 +1,5 @@
-enum ProductType {
+export enum ProductType {
+  All = "ALL",
   Electronics = "Electronics",
   Furniture = "Furniture",
   Kitchenware = "Kitchenware",

@@ -5,7 +5,6 @@ import { ProductProps } from "./ProductCard";
 interface ProductCardModalProps {
   product: ProductProps;
   onClose: () => void;
-  addReferences: (refId: string) => void;
   setDisplayedProducts: React.Dispatch<React.SetStateAction<ProductProps[]>>;
   productCards: ProductProps[];
 }
@@ -25,7 +24,6 @@ const boxModalStyle = {
 const ProductCardModal: React.FC<ProductCardModalProps> = ({
   product,
   onClose,
-  addReferences,
   setDisplayedProducts,
   productCards,
 }) => {
