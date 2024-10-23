@@ -1,8 +1,8 @@
-import * as React from "react";
-import { Container, Box } from "@mui/material";
+import * as React from 'react';
+import { Container, Box } from '@mui/material';
 
-import { Helmet } from "react-helmet-async";
-import { CONFIG } from "../config-global";
+import { Helmet } from 'react-helmet-async';
+import { CONFIG } from '../config-global';
 export const Home: React.FC = () => {
   return (
     <>
@@ -19,7 +19,6 @@ export const Home: React.FC = () => {
         >
           Hello World
         </Box>
-
       </Container>
     </>
   );

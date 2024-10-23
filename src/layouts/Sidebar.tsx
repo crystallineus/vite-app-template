@@ -1,12 +1,12 @@
-import Box from "@mui/material/Box";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import HomeIcon from "@mui/icons-material/Home";
-import InventoryIcon from "@mui/icons-material/Inventory";
-import { Logo } from "../components/Logo";
+import Box from '@mui/material/Box';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import HomeIcon from '@mui/icons-material/Home';
+import InventoryIcon from '@mui/icons-material/Inventory';
+import { Logo } from '../components/Logo';
 
 type SidebarProps = {
   width?: number;
@@ -14,13 +14,13 @@ type SidebarProps = {
 
 const data = [
   {
-    title: "Home",
-    path: "/home",
+    title: 'Home',
+    path: '/home',
     icon: <HomeIcon />,
   },
   {
-    title: "Products",
-    path: "/products",
+    title: 'Products',
+    path: '/products',
     icon: <InventoryIcon />,
   },
 ];
@@ -51,8 +51,8 @@ export function Sidebar({ width }: SidebarProps) {
                       py: 1,
                       gap: 2,
                       pr: 1.5,
-                      typography: "body2",
-                      fontWeight: "fontWeightMedium",
+                      typography: 'body2',
+                      fontWeight: 'fontWeightMedium',
                     }}
                   >
                     <Box component="span" sx={{ width: 24, height: 24 }}>

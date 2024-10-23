@@ -1,6 +1,6 @@
-import React from "react";
-import { Box, Button, Typography } from "@mui/material";
-import { ProductProps } from "./ProductCard";
+import React from 'react';
+import { Box, Button, Typography } from '@mui/material';
+import { ProductProps } from './ProductCard';
 
 interface ProductCardModalProps {
   product: ProductProps;
@@ -10,15 +10,15 @@ interface ProductCardModalProps {
 }
 
 const boxModalStyle = {
-  position: "relative",
-  border: "1px solid #ccc",
+  position: 'relative',
+  border: '1px solid #ccc',
   borderRadius: 2,
   padding: 3,
   boxShadow: 3,
-  bgcolor: "background.paper",
-  width: "100%",
-  maxWidth: "400px",
-  height: "250px",
+  bgcolor: 'background.paper',
+  width: '100%',
+  maxWidth: '400px',
+  height: '250px',
 };
 
 const ProductCardModal: React.FC<ProductCardModalProps> = ({
@@ -40,11 +40,11 @@ const ProductCardModal: React.FC<ProductCardModalProps> = ({
       </Typography>
 
       <Button
-        sx={{ position: "absolute", left: "0", bottom: "0", margin: "16px" }}
+        sx={{ position: 'absolute', left: '0', bottom: '0', margin: '16px' }}
         onClick={() =>
           productCards.length !== 1
             ? setDisplayedProducts((prev) =>
-                prev.filter((ref) => ref.id !== product.id)
+                prev.filter((ref) => ref.id !== product.id),
               )
             : onClose()
         }

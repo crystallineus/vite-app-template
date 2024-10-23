@@ -1,7 +1,7 @@
-import React from "react";
-import Modal from "@mui/material/Modal";
-import ProductCardModal from "./ProductCardModal";
-import { ProductProps } from "./ProductCard";
+import React from 'react';
+import Modal from '@mui/material/Modal';
+import ProductCardModal from './ProductCardModal';
+import { ProductProps } from './ProductCard';
 
 interface ProductModalProps {
   open: boolean;

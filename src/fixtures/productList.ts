@@ -1,80 +1,80 @@
-import { Product } from "../models/Product";
-import { ProductType } from "../models/ProductType";
+import { Product } from '../models/Product';
+import { ProductType } from '../models/ProductType';
 
 export const products: Product[] = [
   {
-    id: "P001",
+    id: 'P001',
     type: ProductType.Electronics,
-    description: "Smartphone with 128GB storage and dual camera.",
+    description: 'Smartphone with 128GB storage and dual camera.',
   },
   {
-    id: "P002",
+    id: 'P002',
     type: ProductType.Electronics,
-    description: "Wireless headphones with noise cancellation.",
+    description: 'Wireless headphones with noise cancellation.',
   },
   {
-    id: "P003",
+    id: 'P003',
     type: ProductType.Electronics,
-    description: "Robot vacuum cleaner with smart mapping.",
+    description: 'Robot vacuum cleaner with smart mapping.',
   },
   {
-    id: "P004",
+    id: 'P004',
     type: ProductType.Electronics,
-    description: "4K Ultra HD smart TV with HDR support.",
+    description: '4K Ultra HD smart TV with HDR support.',
   },
   {
-    id: "P005",
+    id: 'P005',
     type: ProductType.Furniture,
-    description: "Ergonomic office chair with lumbar support.",
+    description: 'Ergonomic office chair with lumbar support.',
   },
   {
-    id: "P006",
+    id: 'P006',
     type: ProductType.Furniture,
-    description: "Solid wood dining table for six.",
+    description: 'Solid wood dining table for six.',
   },
   {
-    id: "P007",
+    id: 'P007',
     type: ProductType.Kitchenware,
-    description: "Non-stick cookware set with frying pans and pots.",
+    description: 'Non-stick cookware set with frying pans and pots.',
   },
   {
-    id: "P008",
+    id: 'P008',
     type: ProductType.Fitness,
-    description: "Adjustable dumbbells with a weight range of 5-50 lbs.",
+    description: 'Adjustable dumbbells with a weight range of 5-50 lbs.',
   },
   {
-    id: "P009",
+    id: 'P009',
     type: ProductType.Electronics,
-    description: "Bluetooth speaker with waterproof design.",
+    description: 'Bluetooth speaker with waterproof design.',
   },
   {
-    id: "P010",
+    id: 'P010',
     type: ProductType.SportsEquipment,
-    description: "Yoga mat with non-slip surface.",
+    description: 'Yoga mat with non-slip surface.',
   },
   {
-    id: "P011",
+    id: 'P011',
     type: ProductType.Books,
-    description: "Bestselling novel by a famous author.",
+    description: 'Bestselling novel by a famous author.',
   },
   {
-    id: "P012",
+    id: 'P012',
     type: ProductType.Beauty,
-    description: "Organic skincare set with moisturizer and serum.",
+    description: 'Organic skincare set with moisturizer and serum.',
   },
   {
-    id: "P013",
+    id: 'P013',
     type: ProductType.Toys,
-    description: "Building blocks set for creative play.",
+    description: 'Building blocks set for creative play.',
   },
   {
-    id: "P014",
+    id: 'P014',
     type: ProductType.OfficeSupplies,
-    description: "Premium notebook with 200 pages.",
+    description: 'Premium notebook with 200 pages.',
   },
   {
-    id: "P015",
+    id: 'P015',
     type: ProductType.Gardening,
-    description: "Indoor plant kit with pots and soil.",
+    description: 'Indoor plant kit with pots and soil.',
   },
 ];
