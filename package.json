@@ -7,8 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "check": "tsc -b --noEmit",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "prettier:check": "prettier --check ."
   },
   "dependencies": {
     "@cucumber/gherkin": "^29.0.0",
