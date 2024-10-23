@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   Container,
   Box,
@@ -6,17 +6,17 @@ import {
   TextField,
   InputAdornment,
   Button,
-} from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
-import { Helmet } from "react-helmet-async";
-import { products } from "../../fixtures/productList";
-import { ProductCard, ProductProps } from "./ProductCard";
-import { CONFIG } from "../../config-global";
-import ProductModal from "./ProductModal";
-import { ProductType } from "../../models/ProductType";
+} from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
+import { Helmet } from 'react-helmet-async';
+import { products } from '../../fixtures/productList';
+import { ProductCard, ProductProps } from './ProductCard';
+import { CONFIG } from '../../config-global';
+import ProductModal from './ProductModal';
+import { ProductType } from '../../models/ProductType';
 export const Products: React.FC = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [filter, setFilter] = useState<string>("ALL");
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filter, setFilter] = useState<string>('ALL');
   const [selectedProduct, setSelectedProduct] = useState<ProductProps>();
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -26,7 +26,7 @@ export const Products: React.FC = () => {
     const matchesDescription = product.description
       .toLowerCase()
       .includes(lowerCaseQuery);
-    const matchesType = filter === "ALL" || product.type === filter;
+    const matchesType = filter === 'ALL' || product.type === filter;
 
     return (matchesId || matchesDescription) && matchesType;
   });
@@ -75,14 +75,14 @@ export const Products: React.FC = () => {
           >
             <Typography variant="body2">
               {`${filteredProducts.length} item${
-                filteredProducts.length !== 1 ? "s" : ""
+                filteredProducts.length !== 1 ? 's' : ''
               } found`}
             </Typography>
             <Box>
               {Object.values(ProductType).map((type) => (
                 <Button
                   key={type}
-                  variant={filter === type ? "contained" : "outlined"}
+                  variant={filter === type ? 'contained' : 'outlined'}
                   onClick={() => setFilter(type)}
                   sx={{ ml: 1 }}
                 >
@@ -94,8 +94,8 @@ export const Products: React.FC = () => {
         </Box>
         <Box
           sx={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
             gap: 2,
           }}
         >

@@ -1,5 +1,5 @@
-import { Card, Box, Typography, Link, Button } from "@mui/material";
-import type { CardProps } from "@mui/material/Card";
+import { Card, Box, Typography, Link, Button } from '@mui/material';
+import type { CardProps } from '@mui/material/Card';
 
 export type ProductProps = {
   id: string;
@@ -31,9 +31,9 @@ export function ProductCard({
           color="inherit"
           underline="hover"
           sx={{
-            display: "-webkit-box",
-            WebkitBoxOrient: "vertical",
-            overflow: "hidden",
+            display: '-webkit-box',
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',
             WebkitLineClamp: 2,
             mt: 1,
           }}
@@ -47,7 +47,7 @@ export function ProductCard({
 
         <Button
           variant="text"
-          sx={{ mt: 2, display: "block" }}
+          sx={{ mt: 2, display: 'block' }}
           onClick={(e) => {
             e.preventDefault();
             onViewDetails();

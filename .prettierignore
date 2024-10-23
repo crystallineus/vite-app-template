@@ -1,0 +1,14 @@
+dist/
+build/
+vite.config.ts
+tsconfig.app.json
+tsconfig.node.json
+.prettierrc
+.prettierignore
+package.json
+package-lock.json
+.github/workflows/
+node_modules/
+src/vite-env.d.ts
+*.md
+eslint.config.js
