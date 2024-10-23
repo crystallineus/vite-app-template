@@ -2,6 +2,7 @@
 
 This is a [Vite app template](vite-app-template.vercel.app) designed to experiment with various features and workflows.
 
+
 ## Table of Contents
 
 - [Vite App Template](#vite-app-template)
