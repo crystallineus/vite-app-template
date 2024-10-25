@@ -11,7 +11,7 @@
     "check": "tsc -b --noEmit",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "prettier:check": "prettier --check ."
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@cucumber/gherkin": "^29.0.0",
