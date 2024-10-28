@@ -1,8 +1,9 @@
 import { Movie } from "../models/Movie";
 
 function MovieCard({movie} : {movie: Movie}) {
-    const handleError = (e: any) => {
-        e.target.src = "images/default.jpg";
+    const handleError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+        const target = e.currentTarget as HTMLImageElement;
+        target.src = "images/default.jpg";
     };
 
     return (
